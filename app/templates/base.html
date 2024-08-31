@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="chat-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
