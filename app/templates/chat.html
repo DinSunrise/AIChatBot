@@ -1,16 +1,19 @@
 {% extends "base.html" %}
 
-{% block title %}Chat with AI{% endblock %}
+{% block title %}Gemini AI Chat{% endblock %}
 
 {% block content %}
     <h1>Gemini Wrapper 0.1.5</h1>
-    <ul id="messages"></ul>
-    <form action="" onsubmit="sendMessage(event)">
-        <input type="text" id="messageText" autocomplete="off"/>
-        <button>Send</button>
+
+    <div id="chat-messages">
+        <ul id="messages"></ul>
+    </div>
+
+    <form id="chatForm">
+        <input type="text" id="messageText" placeholder="Type your message..." autocomplete="off">
+        <button type="submit" id="sendButton">Send</button>
     </form>
+
 {% endblock %}
 
-{% block scripts %}
-    <script src="/static/chat.js"></script>
-{% endblock %}
+
